@@ -14,6 +14,7 @@ const users = [
   {
     name:"John Ayanyemi Abiodun",
     email:"john@gmail.com",
+    bio:"Designer",
   }
 ]
 const App = () => {
@@ -21,12 +22,12 @@ const App = () => {
     <div className='flex flex-col items-center min-h-screen bg-gray-100 py-10'>
       <h1 className="text-3xl font-bold mb-5">User Profile Cards</h1>
       <div className='flex flex-gap-8'>
-      {users.map( (user, index) =>{
-        <UserCard key={index} {...user} />
+      {users.map( (user, index) => {
+        <UserCard key={index} {...user}/>
       }
       )}
       </div>
-
+ 
     </div>
   )
 }
